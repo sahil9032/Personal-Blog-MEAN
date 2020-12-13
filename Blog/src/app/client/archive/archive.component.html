@@ -1,0 +1,8 @@
+<ul class="list-group">
+  <li class="list-group-item"><span>Archive</span>
+    <ul *ngFor="let p of posts">
+      <li>{{p.title}}&nbsp;<a [routerLink]="['/post/', p._id]" routerLinkActive="active"><i
+        class="fa fa-external-link"></i></a></li>
+    </ul>
+  </li>
+</ul>

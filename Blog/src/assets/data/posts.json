@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "title": "Post 1",
+    "author": "Sahil Bhuva",
+    "date": "Sep 2nd, 2020",
+    "imagePath": "assets/img/desk.jpg",
+    "content": "Computer programming is the process of designing and building an executable computer program to accomplish a specific computing result. Programming involves tasks such as: analysis, generating algorithms, profiling algorithms' accuracy and resource consumption, and the implementation of algorithms in a chosen programming language (commonly referred to as coding).[1][2] The source code of a program is written in one or more languages that are intelligible to programmers, rather than machine code, which is directly executed by the central processing unit. The purpose of programming is to find a sequence of instructions that will automate the performance of a task (which can be as complex as an operating system) on a computer, often for solving a given problem. Proficient programming thus often requires expertise in several different subjects, including knowledge of the application domain, specialized algorithms, and formal logic.",
+    "comments": [
+      {
+        "author": "ABC",
+        "content": "It's first comment",
+        "time": "8:00 PM on 28/09/2000"
+      },
+      {
+        "author": "XYZ",
+        "content": "Hello",
+        "time": "By ABC at 8:00 PM on 28/09/2000"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Post 2",
+    "author": "Sahil Bhuva",
+    "date": "Sep 2nd, 2020",
+    "imagePath": "assets/img/building.jpg",
+    "content": "",
+    "comments": [
+      {
+        "author": "ABC",
+        "content": "It's first comment",
+        "time": "8:00 PM on 28/09/2000"
+      },
+      {
+        "author": "XYZ",
+        "content": "Hello",
+        "time": "By ABC at 8:00 PM on 28/09/2000"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Post 3",
+    "author": "Sahil Bhuva",
+    "date": "Sep 2nd, 2020",
+    "imagePath": "assets/img/loft.jpg",
+    "content": "",
+    "comments": [
+      {
+        "author": "ABC",
+        "content": "It's first comment",
+        "time": "8:00 PM on 28/09/2000"
+      },
+      {
+        "author": "XYZ",
+        "content": "Hello",
+        "time": "By ABC at 8:00 PM on 28/09/2000"
+      }
+    ]
+  }
+]

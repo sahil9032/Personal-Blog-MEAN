@@ -1,0 +1,7 @@
+<?xml encoding="UTF-8"?>
+  <!ELEMENT users (user)>
+  <!ELEMENT user (name,email,role)>
+  <!ATTLIST user _id CDATA #REQUIRED>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT email (#PCDATA)>
+  <!ELEMENT role (#PCDATA)>

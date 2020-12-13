@@ -1,0 +1,26 @@
+<div class="contact-clean">
+  <form method="post" [formGroup]="postForm" (ngSubmit)="addPost()" enctype="multipart/form-data">
+    <h2 class="text-center">Post Form</h2>
+    <div class="form-group">
+      <input class="form-control" type="text" name="title" placeholder="Title" formControlName="title">
+      <small *ngIf="postForm.get('title').hasError('required') && !postForm.get('title').untouched"
+             class="text-danger">Required!</small>
+    </div>
+    <div class="form-group">
+      <input class="form-control" type="file" formControlName="imagePath" name="imagePath" (change)="createFormData($event)">
+
+      <small *ngIf="postForm.get('imagePath').hasError('required') && !postForm.get('imagePath').untouched"
+             class="text-danger">Required!</small>
+    </div>
+    <img *ngIf="imageUrl" class="form-group" style="width: 100%; height: 100%" [src]="imageUrl">
+    <div class="form-group">
+      <textarea class="form-control" name="content" placeholder="Content" rows="14"
+                formControlName="content"></textarea>
+      <small *ngIf="postForm.get('content').hasError('required') && !postForm.get('content').untouched"
+             class="text-danger">Required!</small>
+    </div>
+    <div class="form-group">
+      <button class="btn btn-primary" type="submit" [disabled]="!postForm.valid">Add Post</button>
+    </div>
+  </form>
+</div>

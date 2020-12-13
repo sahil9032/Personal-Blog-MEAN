@@ -1,0 +1,18 @@
+<nav class="navbar navbar-dark navbar-expand-md bg-primary">
+  <div class="container-fluid"><a class="navbar-brand" href="#">Blog</a>
+    <button class="navbar-toggler" data-target="#navcol-1" data-toggle="collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navcol-1">
+      <ul class="nav navbar-nav">
+        <li class="nav-item" role="presentation"><a class="nav-link" routerLink="/admin/index" routerLinkActive="true">Home</a>
+        </li>
+        <li class="nav-item" role="presentation"><a class="nav-link" routerLink="/admin/add" routerLinkActive="true">Add Post</a></li>
+        <li class="nav-item" role="presentation"><a class="nav-link" routerLink="/admin/add/user" routerLinkActive="true">Add Contributor</a>
+        </li>
+        <li class="nav-item" role="presentation"><a (click)="logout()" class="nav-link">Logout ({{id}})</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

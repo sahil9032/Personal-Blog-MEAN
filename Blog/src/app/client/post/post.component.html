@@ -1,0 +1,32 @@
+<div class="article-clean">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+        <div class="intro">
+          <h1 class="text-center">{{post.title}}</h1>
+          <p class="text-center"><span class="by">by </span>{{post.author}}<span
+            class="date">{{post.date.substring(0, 10)}}</span></p><img class="img-fluid" src="{{post.imagePath}}"></div>
+        <div class="text">
+          <p>{{post.content}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container text-left">
+  <form (ngSubmit)="add()" [formGroup]="commentForm" method="post" *ngIf="isLoggedIn">
+    <div class="form-group">
+      <label>Comments:</label>
+      <textarea class="form-control" rows="5" formControlName="content"></textarea>
+    </div>
+    <div class="text-right">
+      <button class="btn btn-primary" type="submit" [disabled]="!commentForm.valid">Comment</button>
+    </div>
+  </form>
+  <ul *ngFor="let comment of post.comments" class="list-group">
+    <li class="list-group-item"><span>{{comment.content}}</span>
+      <input type="hidden" name="_id" value="{{comment._id}}">
+      <div class="text-right"><sub>&nbsp;By {{comment.author}} at {{comment.date.substring(0, 10)}}&nbsp;</sub></div>
+    </li>
+  </ul>
+</div>

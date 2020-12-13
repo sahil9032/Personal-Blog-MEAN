@@ -1,0 +1,15 @@
+<div *ngIf="isAdmin ; then adminHeader else clientHeader"></div>
+<ng-template #adminHeader>
+  <app-admin-header></app-admin-header>
+</ng-template>
+<ng-template #clientHeader>
+  <app-client-header></app-client-header>
+</ng-template>
+<router-outlet></router-outlet>
+<div *ngIf="isAdmin ; then adminFooter else clientFooter"></div>
+<ng-template #adminFooter>
+  <app-admin-footer></app-admin-footer>
+</ng-template>
+<ng-template #clientFooter>
+  <app-client-footer></app-client-footer>
+</ng-template>

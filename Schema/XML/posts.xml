@@ -1,0 +1,16 @@
+<posts>
+  <post _id="1">
+    <title>Post 1</title>
+    <author>Sahil Bhuva</author>
+    <date>31/10/2020</date>
+    <imagePath>assets/img/desk.jpg</imagePath>
+    <content>This is Post</content>
+    <comments>
+      <comment _id="1">
+        <author>ABC</author>
+        <content>XYZ</content>
+        <date>31/10/2020</date>
+      </comment>
+    </comments>
+  </post>
+</posts>

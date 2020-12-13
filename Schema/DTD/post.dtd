@@ -1,0 +1,12 @@
+<?xml encoding="UTF-8"?>
+  <!ELEMENT posts (post)?>
+  <!ELEMENT post (title,author,date,imagePath,content,comments)>
+  <!ATTLIST post _id CDATA #REQUIRED>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT imagePath (#PCDATA)>
+  <!ELEMENT comments (comment)?>
+  <!ELEMENT comment (author,content,date)>
+  <!ATTLIST comment _id CDATA #REQUIRED>
+  <!ELEMENT author (#PCDATA)>
+  <!ELEMENT date (#PCDATA)>
+  <!ELEMENT content (#PCDATA)>
